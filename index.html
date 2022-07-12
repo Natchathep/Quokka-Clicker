@@ -3,28 +3,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quokka Clicker</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="wholecode">
     <div class="Heading">
         <h1>Welcome to Quokka Clicker</h1>
-        <h2>Clicks:</h2>
+        <h2>Clicks: <span id="amclicks"></span></h2>
+        <input type="text" id="inc" value="0"></input>
         <h3>Click me</h3>
         <h3>↓</h3>
     </div>
     <script>
-        var buttonclicked;
-        
+        var i = 0;
+        function buttonClick() {
+            document.getElementById('inc').value = ++i;
+        }
     </script>
-    <style>
-        .Heading{
-            color: blanchedalmond;
-        }
-        body{
-            background-color: sienna;
-        }
-
-    </style>
-    <button type="button"><img width="200px" height="200px" src="https://i.imgur.com/QKjxNJ5.png" alt="click_button"></button>
+    <button onclick="buttonClick()"><img width="200px" height="200px" src="https://i.imgur.com/QKjxNJ5.png" alt=""></button>
+</div>
 </body>
 </html>
