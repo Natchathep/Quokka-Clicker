@@ -30,11 +30,20 @@
  <p>Factory</p>
  <p>$10</p>
  <div class="buyfactory">
- <button onclick="">Buy this factory</button>
+ <button onclick="fact1()">Buy this factory</button>
 </div>
     <img src="data:image/png;base64,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" alt="factory">
 </div>
-
+<script>
+    function fact1(){
+ if (i=>10){
+        i = i - 10
+        inc = inc - 10
+        while (i > -100) {
+            document.getElementById('inc').value = ++i
+        }
+        }}
+</script>
 
 </body>
 </html>
