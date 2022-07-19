@@ -2,7 +2,11 @@
     color: blanchedalmond;
 }
 body{
-    background-color: black;
+    background-color: rgb(255, 255, 255);
+}
+.coin{
+
+
 }
 .wholecode{
     text-align: center;
@@ -13,7 +17,7 @@ body{
 }
 .factory{
 
-color: aliceblue;
+color: black;
 
 }
 .buybuilding{
@@ -26,6 +30,11 @@ margin-left: 50px;
 
 }
 .Building{
-color: aliceblue;
+color: black;
 
+}
+.grid{
+display: grid;
+grid-template-rows: 30% 30% 40%;
+grid-template-columns:15% 30% 60% ;
 }
