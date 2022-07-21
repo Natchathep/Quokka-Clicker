@@ -1,8 +1,8 @@
 .Heading{
-    color: blanchedalmond;
+    color: black;
 }
 body{
-    background-color: black;
+    background-color: white;
 }
 .wholecode{
     text-align: center;
@@ -13,7 +13,7 @@ body{
 }
 .factory{
 
-color: white;
+color: black;
 
 }
 .buybuilding{
@@ -26,11 +26,11 @@ margin-left: 50px;
 
 }
 .Building{
-color: white;
+color: black;
 
 }
 .grid{
 display: grid;
 grid-template-rows: 30% 30% 40%;
-grid-template-columns:15% 30% 60% ;
+grid-template-columns: 35% 80% 35% ;
 }
