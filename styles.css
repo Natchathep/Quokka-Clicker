@@ -2,7 +2,7 @@
     color: blanchedalmond;
 }
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: black;
 }
 .wholecode{
     text-align: center;
@@ -13,7 +13,7 @@ body{
 }
 .factory{
 
-color: black;
+color: white;
 
 }
 .buybuilding{
@@ -26,7 +26,7 @@ margin-left: 50px;
 
 }
 .Building{
-color: black;
+color: white;
 
 }
 .grid{
