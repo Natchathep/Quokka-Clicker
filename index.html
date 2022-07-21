@@ -14,13 +14,14 @@
         <h1>Money</h1>
     </header>
         <h2>Assets: <span id="amclicks"></span></h2>
-        <input type="text" id="inc" value="0"></input>
+        <input type="text" id="inc" value="1000000000"></input>
         <h3>Click me</h3>
         <h3>↓</h3>
     
     </div>
     <script>
-        var i = 0;
+        var i = 1000000000;
+        var f = 0;
         function buttonClick() {
             document.getElementById('inc').value = ++i;
         }
@@ -35,18 +36,26 @@
 <div class="item item1">
 
 <div class="factory">
+    <input type="text" id="fact" value="0">
  <p>Factory</p>
  <p>$10</p>
  <div class="buyfactory">
     <script>
         function fact1(){
-     if (i>10){
+     if (i>=10){
             i = i - 10
             inc = inc - 10
-           
+            document.getElementById('fact').value = ++f;
             }}
+            function sell1(){
+                if (f>=1){
+                    i = i + 10
+                    f = f - 1
+                }
+            }
     </script>
  <button onclick="fact1()">Buy this factory</button>
+ <button onclick="sell1()">Sell a factory</button>
 </div>
     <img src="https://i.imgur.com/XUcYTRg.png" alt="factory" width="200px" height="200px">
 </div>
@@ -70,7 +79,7 @@
 
 <script>
     function fact2(){
- if (i>15){
+ if (i>=15){
         i = i - 15
         inc = inc - 15
 
