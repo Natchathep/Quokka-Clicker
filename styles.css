@@ -31,6 +31,8 @@ color: black;
 }
 .grid{
 display: grid;
-grid-template-rows: 30% 30% 40%;
-grid-template-columns: 35% 80% 35% ;
+grid-template-rows: auto auto auto;
+grid-template-columns:auto auto auto;
 }
+
+

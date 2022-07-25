@@ -24,6 +24,8 @@
         var f = 0;
         var b = 0;
         var c = 0;
+        var fo = 0;
+        var y = 0;
         function buttonClick() {
             document.getElementById('inc').value = ++i;
             i = i + 999
@@ -66,79 +68,152 @@
 </div>
 
 <div class="grid">
+    <div class="item item2">
 
-<div class="item item2">
-
-<div class="Building">
-    <input type="text" id="build" value="0">
-    <p>Building</p>
-    <p>$100,000</p>
-<div class="buybuilding">
-<button onclick="fact2()">Buy this building</button>
-<button onclick="sell2()">Sell a building</button>
+        <div class="Building">
+            <input type="text" id="build" value="0">
+            <p>Building</p>
+            <p>$100,000</p>
+        <div class="buybuilding">
+        <button onclick="fact2()">Buy this building</button>
+        <button onclick="sell2()">Sell a building</button>
+        </div>
+        
+        <div class="Buildingimg">
+        <img src="https://preview.redd.it/2d5yxil94ctz.png?auto=webp&s=3ffe80562e5eed55dd0d2656f1aaa23f39f02e53" alt="building" width="200" height="200">
+        </div>
+        
+        </div>
+        
+        </div>
+        <script>
+            function sell2(){
+                if (b>=1){
+                    i = i + 100000
+                    b = b - 1
+                }
+            }
+        </script>
+        <script>
+            function fact2(){
+         if (i>=15){
+                i = i - 100000
+                inc = inc - 100000
+                document.getElementById('build').value = ++b;
+                }}
+        </script>
+        
+        
+        <div class="grid">
+        
+        <div class="item item3">
+        
+            <div class="Car">
+                <input type="text" id="car" value="0">
+                <p>Car</p>
+                <p>$30,000</p>
+            <div class="buycar">
+            <button onclick="fact3()">Buy this Car</button>
+            <button onclick="sell3()">Sell a car</button>
+            </div>
+            
+            <div class="Carimg">
+            <img src="https://platform.cstatic-images.com/medium/in/v2/stock_photos/3bdf7ee5-9999-46f2-94d5-05d81e747aaf/b6f1c51a-16c9-4054-bd5c-f5f5c895014f.png" alt="building" width="250" height="200">
+            </div>
+            
+            </div>
+            
+        
+        </div>
+        <script>
+            function sell3(){
+                if (c>=1){
+                    i = i + 30000
+                    c = c - 1
+                }
+            }
+        </script>
+        <script>
+            function fact3(){
+         if (i>=15){
+                i = i - 30000
+                document.getElementById('car').value = ++c;
+                }}
+        </script>
+        </div>
 </div>
 
-<div class="Buildingimg">
-<img src="https://preview.redd.it/2d5yxil94ctz.png?auto=webp&s=3ffe80562e5eed55dd0d2656f1aaa23f39f02e53" alt="building" width="200" height="200">
-</div>
 
-</div>
+<div class="grid 2">
 
-</div>
-<script>
-    function sell2(){
-        if (b>=1){
-            i = i + 100000
-            b = b - 1
+    <div class="item item4">
+    
+        <div class="Food">
+            <input type="text" id="Food" value="0">
+            <p>Food</p>
+            <p>$30</p>
+        <div class="buycar">
+        <button onclick="fact4()">Buy Food</button>
+        <button onclick="sell4()">Sell Food</button>
+        </div>
+        
+        <div class="Foodimg">
+        <img src="https://i.imgur.com/m3NfmAt.png" alt="food" width="250" height="200">
+        </div>
+        
+        </div>
+        
+    
+    
+    <script>
+        function sell4(){
+            if (fo>=1){
+                i = i + 30
+                fo = fo - 1
+            }
         }
-    }
-</script>
-<script>
-    function fact2(){
- if (i>=15){
-        i = i - 100000
-        inc = inc - 100000
-        document.getElementById('build').value = ++b;
-        }}
-</script>
-
+    </script>
+    <script>
+        function fact4(){
+     if (i>=30){
+            i = i - 30
+            document.getElementById('food').value = ++fo;
+            }}
+    </script>
 
 <div class="grid">
-
-<div class="item item3">
-
-    <div class="Car">
-        <input type="text" id="car" value="0">
-        <p>Car</p>
-        <p>$30,000</p>
-    <div class="buycar">
-    <button onclick="fact3()">Buy this Car</button>
-    <button onclick="sell3()">Sell a car</button>
-    </div>
+ <div class="item item5">
+    <input type="text" id="yacht" value="0"></input>
+    <p>Yacht</p>
+            <p>$1,000,000</p>
+        <div class="buyyacht">
+        <button onclick="fact5()">Buy Yacht</button>
+        <button onclick="sell5()">Sell Yacht</button>
+        <script>
+            function sell5(){
+                if (y>=1){
+                    i = i + 1,000,000
+                    fo = fo - 1
+                }
+            }
+        </script>
+        <script>
+            function fact5(){
+         if (i>=1000000){
+                i = i - 1000000
+                document.getElementById('yacht').value = ++y;
+                }}
+        </script>
     
-    <div class="Carimg">
-    <img src="https://platform.cstatic-images.com/medium/in/v2/stock_photos/3bdf7ee5-9999-46f2-94d5-05d81e747aaf/b6f1c51a-16c9-4054-bd5c-f5f5c895014f.png" alt="building" width="250" height="200">
-    </div>
-    
-    </div>
-    
+        </div>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRbXaky0p5tbx2clsiCOB-zg6KLqGbIt--Ig&usqp=CAU" alt="yacht">
 
+</div>  
 </div>
-<script>
-    function sell3(){
-        if (c>=1){
-            i = i + 30000
-            c = c - 1
-        }
-    }
-</script>
-<script>
-    function fact3(){
- if (i>=15){
-        i = i - 30000
-        document.getElementById('car').value = ++c;
-        }}
-</script>
+
+
+
+
 
 </body>
 </html>
